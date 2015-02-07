@@ -49,6 +49,12 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 	}
 
 
+	/// Returns `true` if the receiver is neither `nil` nor a branch.
+	public var isLeaf: Bool {
+		return analysis { left, _, right in left == nil && right == nil  } ?? false
+	}
+
+
 	// MARK: NilLiteralConvertible
 
 	public init(nilLiteral: ()) {
