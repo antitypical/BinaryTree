@@ -44,6 +44,17 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 		}
 	}
 
+	/// Returns the value of the receiver or `nil`.
+	public var value: T? {
+		switch self {
+		case let Branch(_, value, _):
+			return value.value
+
+		case Nil:
+			return nil
+		}
+	}
+
 
 	// MARK: NilLiteralConvertible
 
