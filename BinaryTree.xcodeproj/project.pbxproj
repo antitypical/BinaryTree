@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D4F9F9381A869A5700B7071E /* BinaryTree.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F9F9371A869A5700B7071E /* BinaryTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4F9F93A1A869A5700B7071E /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D4F9F9391A869A5700B7071E /* .gitignore */; };
-		D4F9F93D1A869A5700B7071E /* BinaryTree.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = D4F9F93C1A869A5700B7071E /* BinaryTree.xcworkspace */; };
 		D4F9F9431A869A5700B7071E /* BinaryTree.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F9F9321A869A5700B7071E /* BinaryTree.framework */; };
 		D4F9F94A1A869A5700B7071E /* BinaryTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F9F9491A869A5700B7071E /* BinaryTreeTests.swift */; };
 /* End PBXBuildFile section */
@@ -28,9 +26,6 @@
 		D4F9F9321A869A5700B7071E /* BinaryTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BinaryTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F9F9361A869A5700B7071E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F9F9371A869A5700B7071E /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
-		D4F9F9391A869A5700B7071E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
-		D4F9F93B1A869A5700B7071E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		D4F9F93C1A869A5700B7071E /* BinaryTree.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = BinaryTree.xcworkspace; sourceTree = SOURCE_ROOT; };
 		D4F9F9421A869A5700B7071E /* BinaryTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F9F9481A869A5700B7071E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F9F9491A869A5700B7071E /* BinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeTests.swift; sourceTree = "<group>"; };
@@ -77,9 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				D4F9F9371A869A5700B7071E /* BinaryTree.h */,
-				D4F9F9391A869A5700B7071E /* .gitignore */,
-				D4F9F93B1A869A5700B7071E /* LICENSE */,
-				D4F9F93C1A869A5700B7071E /* BinaryTree.xcworkspace */,
 				D4F9F9351A869A5700B7071E /* Supporting Files */,
 			);
 			path = BinaryTree;
@@ -200,8 +192,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4F9F93A1A869A5700B7071E /* .gitignore in Resources */,
-				D4F9F93D1A869A5700B7071E /* BinaryTree.xcworkspace in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
