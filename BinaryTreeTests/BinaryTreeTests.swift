@@ -36,8 +36,20 @@ final class BinaryTreeTests: XCTestCase {
 	}
 
 	func testBranchesAreBranches() {
+		for branch in branches {
+			XCTAssert(branch.isBranch)
+		}
 		XCTAssert(BinaryTree<Int>(BinaryTree(0), 0, BinaryTree(0)).isBranch)
 	}
+
+
+	// MARK: Fixtures
+
+	let branches = [
+		BinaryTree(BinaryTree(0), 0, nil),
+		BinaryTree(nil, 0, BinaryTree(0)),
+		BinaryTree<Int>(BinaryTree(0), 0, BinaryTree(0)),
+	]
 }
 
 
