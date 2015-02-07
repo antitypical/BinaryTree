@@ -4,6 +4,10 @@ final class BinaryTreeTests: XCTestCase {
 	func testEmptyTreesAreNotLeaves() {
 		XCTAssertFalse(BinaryTree<Int>().isLeaf)
 	}
+
+	func testLeavesAreNonEmpty() {
+		XCTAssertFalse(BinaryTree(0).isEmpty)
+	}
 }
 
 
