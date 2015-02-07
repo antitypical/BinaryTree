@@ -14,6 +14,11 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 		self = Branch(Box(nil), Box(value), Box(nil))
 	}
 
+	/// Constructs a branch.
+	public init(_ left: BinaryTree, _ value: T, _ right: BinaryTree) {
+		self = Branch(Box(left), Box(value), Box(right))
+	}
+
 
 	// MARK: NilLiteralConvertible
 
