@@ -11,7 +11,7 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 
 	/// Constructs a leaf.
 	public init(_ value: T) {
-		self = Branch(Box(nil), Box(value), Box(nil))
+		self.init(nil, value, nil)
 	}
 
 	/// Constructs a branch.
