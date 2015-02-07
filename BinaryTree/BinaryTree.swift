@@ -59,6 +59,11 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 		return analysis { left, _, right in left != nil || right != nil  } ?? false
 	}
 
+	/// Returns `true` if the receiver is empty.
+	public var isEmpty: Bool {
+		return analysis(const(false)) ?? true
+	}
+
 
 	// MARK: NilLiteralConvertible
 
@@ -73,3 +78,4 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 
 
 import Box
+import Prelude
