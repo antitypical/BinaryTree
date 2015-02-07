@@ -55,6 +55,17 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 		}
 	}
 
+	/// Performs case analysis on the receiver.
+	public func analysis<U>(f: (BinaryTree, T, BinaryTree) -> U) -> U? {
+		switch self {
+		case let Branch(left, value, right):
+			return f(left.value, value.value, right.value)
+
+		case Nil:
+			return nil
+		}
+	}
+
 
 	// MARK: NilLiteralConvertible
 
