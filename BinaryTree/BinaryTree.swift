@@ -20,6 +20,19 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 	}
 
 
+	// MARK: Properties
+
+	public var left: BinaryTree {
+		switch self {
+		case let Branch(left, _, _):
+			return left.value
+
+		case Nil:
+			return nil
+		}
+	}
+
+
 	// MARK: NilLiteralConvertible
 
 	public init(nilLiteral: ()) {
