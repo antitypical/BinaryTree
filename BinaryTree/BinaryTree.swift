@@ -24,35 +24,17 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 
 	/// Returns the left branch of the receiver, or `nil`.
 	public var left: BinaryTree {
-		switch self {
-		case let Branch(left, _, _):
-			return left.value
-
-		case Nil:
-			return nil
-		}
+		return analysis { left, _, _ in left } ?? nil
 	}
 
 	/// Returns the right branch of the receiver, or `nil`.
 	public var right: BinaryTree {
-		switch self {
-		case let Branch(_, _, right):
-			return right.value
-
-		case Nil:
-			return nil
-		}
+		return analysis { _, _, right in right } ?? nil
 	}
 
 	/// Returns the value of the receiver, or `nil`.
 	public var value: T? {
-		switch self {
-		case let Branch(_, value, _):
-			return value.value
-
-		case Nil:
-			return nil
-		}
+		return analysis { _, value, _ in value }
 	}
 
 	/// Performs case analysis on the receiver.
