@@ -51,12 +51,12 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 
 	/// Returns `true` if the receiver is neither `nil` nor a branch.
 	public var isLeaf: Bool {
-		return analysis { left, _, right in left == nil && right == nil  } ?? false
+		return analysis { left, _, right in left.isEmpty && right.isEmpty } ?? false
 	}
 
 	/// Returns `true` if the receiver has at least one branch.
 	public var isBranch: Bool {
-		return analysis { left, _, right in left != nil || right != nil  } ?? false
+		return analysis { left, _, right in !left.isEmpty || !right.isEmpty } ?? false
 	}
 
 	/// Returns `true` if the receiver is empty.
