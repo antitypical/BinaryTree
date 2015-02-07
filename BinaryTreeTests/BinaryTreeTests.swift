@@ -1,6 +1,10 @@
 //  Copyright (c) 2015 Rob Rix. All rights reserved.
 
 final class BinaryTreeTests: XCTestCase {
+	func testEmptyTreesAreEmpty() {
+		XCTAssert(BinaryTree<Int>().isEmpty)
+	}
+
 	func testEmptyTreesAreNotLeaves() {
 		XCTAssertFalse(BinaryTree<Int>().isLeaf)
 	}
