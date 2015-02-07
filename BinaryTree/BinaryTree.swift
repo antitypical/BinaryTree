@@ -10,7 +10,7 @@ public enum BinaryTree<T> {
 	}
 
 
-	case Branch(Box<BinaryTree>?, Box<T>, Box<BinaryTree>?)
+	case Branch(Box<BinaryTree>, Box<T>, Box<BinaryTree>)
 	case Nil
 }
 
