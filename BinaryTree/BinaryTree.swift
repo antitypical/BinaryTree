@@ -54,6 +54,11 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 		return analysis { left, _, right in left == nil && right == nil  } ?? false
 	}
 
+	/// Returns `true` if the receiver has at least one branch.
+	public var isBranch: Bool {
+		return analysis { left, _, right in left != nil || right != nil  } ?? false
+	}
+
 
 	// MARK: NilLiteralConvertible
 
