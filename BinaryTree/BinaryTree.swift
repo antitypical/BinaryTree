@@ -2,8 +2,8 @@
 
 /// A binary tree with leaves of type `T`.
 enum BinaryTree<T> {
-	case Leaf(Box<T>)
-	case Branch(Box<BinaryTree>, Box<BinaryTree>)
+	case Branch(Box<BinaryTree>?, Box<T>, Box<BinaryTree>?)
+	case Nil
 }
 
 
