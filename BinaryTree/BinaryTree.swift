@@ -22,6 +22,7 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 
 	// MARK: Properties
 
+	/// Returns the left branch of the receiver or `nil`.
 	public var left: BinaryTree {
 		switch self {
 		case let Branch(left, _, _):
@@ -32,6 +33,7 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 		}
 	}
 
+	/// Returns the right branch of the receiver or `nil`.
 	public var right: BinaryTree {
 		switch self {
 		case let Branch(_, _, right):
