@@ -13,6 +13,8 @@
 		D4F9F9541A869D2200B7071E /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F9F9531A869D2200B7071E /* Box.framework */; };
 		D4F9F9551A869D2B00B7071E /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F9F9531A869D2200B7071E /* Box.framework */; };
 		D4F9F9571A869D8A00B7071E /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F9F9561A869D8A00B7071E /* BinaryTree.swift */; };
+		D4F9F9591A86A88E00B7071E /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F9F9581A86A88E00B7071E /* Prelude.framework */; };
+		D4F9F95A1A86A89C00B7071E /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F9F9581A86A88E00B7071E /* Prelude.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 		D4F9F9491A869A5700B7071E /* BinaryTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeTests.swift; sourceTree = "<group>"; };
 		D4F9F9531A869D2200B7071E /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Box.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F9F9561A869D8A00B7071E /* BinaryTree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		D4F9F9581A86A88E00B7071E /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4F9F9541A869D2200B7071E /* Box.framework in Frameworks */,
+				D4F9F9591A86A88E00B7071E /* Prelude.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 			files = (
 				D4F9F9431A869A5700B7071E /* BinaryTree.framework in Frameworks */,
 				D4F9F9551A869D2B00B7071E /* Box.framework in Frameworks */,
+				D4F9F95A1A86A89C00B7071E /* Prelude.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +68,7 @@
 				D4F9F9341A869A5700B7071E /* BinaryTree */,
 				D4F9F9461A869A5700B7071E /* BinaryTreeTests */,
 				D4F9F9531A869D2200B7071E /* Box.framework */,
+				D4F9F9581A86A88E00B7071E /* Prelude.framework */,
 				D4F9F9331A869A5700B7071E /* Products */,
 			);
 			sourceTree = "<group>";
