@@ -34,6 +34,10 @@ final class BinaryTreeTests: XCTestCase {
 	func testBranchesAreNonEmpty() {
 		map(branches) { XCTAssertFalse($0.isEmpty) }
 	}
+
+	func testBranchesAreNotLeaves() {
+		map(branches) { XCTAssertFalse($0.isLeaf) }
+	}
 }
 
 
