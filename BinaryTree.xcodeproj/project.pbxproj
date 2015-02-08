@@ -67,8 +67,6 @@
 			children = (
 				D4F9F9341A869A5700B7071E /* BinaryTree */,
 				D4F9F9461A869A5700B7071E /* BinaryTreeTests */,
-				D4F9F9531A869D2200B7071E /* Box.framework */,
-				D4F9F9581A86A88E00B7071E /* Prelude.framework */,
 				D4F9F9331A869A5700B7071E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +93,8 @@
 		D4F9F9351A869A5700B7071E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D4F9F9531A869D2200B7071E /* Box.framework */,
+				D4F9F9581A86A88E00B7071E /* Prelude.framework */,
 				D4F9F9361A869A5700B7071E /* Info.plist */,
 			);
 			name = "Supporting Files";
