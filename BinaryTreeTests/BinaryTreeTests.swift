@@ -1,5 +1,60 @@
 //  Copyright (c) 2015 Rob Rix. All rights reserved.
 
-import XCTest
+final class BinaryTreeTests: XCTestCase {
+	func testEmptyTreesAreEmpty() {
+		XCTAssert(empty.isEmpty)
+	}
 
-final class BinaryTreeTests: XCTestCase {}
+	func testEmptyTreesAreNotLeaves() {
+		XCTAssertFalse(empty.isLeaf)
+	}
+
+	func testEmptyTreesAreNotBranches() {
+		XCTAssertFalse(empty.isBranch)
+	}
+
+
+	func testLeavesAreLeaves() {
+		XCTAssert(leaf.isLeaf)
+	}
+
+	func testLeavesAreNonEmpty() {
+		XCTAssertFalse(leaf.isEmpty)
+	}
+
+	func testLeavesAreNotBranches() {
+		XCTAssertFalse(leaf.isBranch)
+	}
+
+
+	func testBranchesAreBranches() {
+		map(branches) { XCTAssert($0.isBranch) }
+	}
+
+	func testBranchesAreNonEmpty() {
+		map(branches) { XCTAssertFalse($0.isEmpty) }
+	}
+
+	func testBranchesAreNotLeaves() {
+		map(branches) { XCTAssertFalse($0.isLeaf) }
+	}
+}
+
+
+// MARK: - Fixtures
+
+private let empty: BinaryTree<Int> = nil
+
+private let leaf = BinaryTree(0)
+
+private let branches: [BinaryTree<Int>] = [
+	BinaryTree(leaf, 0, nil),
+	BinaryTree(nil, 0, leaf),
+	BinaryTree(leaf, 0, leaf),
+]
+
+
+// MARK: - Imports
+
+import BinaryTree
+import XCTest
