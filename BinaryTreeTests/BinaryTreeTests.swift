@@ -38,6 +38,23 @@ final class BinaryTreeTests: XCTestCase {
 	func testBranchesAreNotLeaves() {
 		map(branches) { XCTAssertFalse($0.isLeaf) }
 	}
+
+
+	func testEmptyIsEqualToEmpty() {
+		XCTAssert(empty == empty)
+	}
+
+	func testBranchesAreEqualToThemselves() {
+		map(Zip2(branches, branches)) { b1, b2 in XCTAssert(b1 == b2) }
+	}
+
+	func testLeafIsNotEqualToEmpty() {
+		XCTAssertFalse(leaf == empty)
+	}
+
+	func testBranchesAreNotEqualToBranchesWithDifferentStructure() {
+		map(Zip2(branches, PermutationGenerator(elements: branches, indices: [2, 0, 1]))) { b1, b2 in XCTAssert(b1 != b2)}
+	}
 }
 
 
