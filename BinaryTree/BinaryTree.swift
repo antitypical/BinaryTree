@@ -77,5 +77,19 @@ public enum BinaryTree<T>: NilLiteralConvertible {
 }
 
 
+public func == <T: Equatable> (left: BinaryTree<T>, right: BinaryTree<T>) -> Bool {
+	switch (left.analysis(id), right.analysis(id)) {
+	case let (.Some(x1, v1, y1), .Some(x2, v2, y2)):
+		return v1 == v2 && x1 == x2 && y1 == y2
+
+	case (.None, .None):
+		return true
+
+	default:
+		return false
+	}
+}
+
+
 import Box
 import Prelude
