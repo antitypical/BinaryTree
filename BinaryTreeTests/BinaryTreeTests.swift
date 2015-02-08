@@ -43,6 +43,10 @@ final class BinaryTreeTests: XCTestCase {
 	func testEmptyIsEqualToEmpty() {
 		XCTAssert(empty == empty)
 	}
+
+	func testBranchesAreEqualToThemselves() {
+		map(Zip2(branches, branches)) { b1, b2 in XCTAssert(b1 == b2) }
+	}
 }
 
 
