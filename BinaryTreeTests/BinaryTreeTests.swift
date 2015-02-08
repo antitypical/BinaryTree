@@ -2,15 +2,15 @@
 
 final class BinaryTreeTests: XCTestCase {
 	func testEmptyTreesAreEmpty() {
-		XCTAssert(BinaryTree<Int>().isEmpty)
+		XCTAssert(empty.isEmpty)
 	}
 
 	func testEmptyTreesAreNotLeaves() {
-		XCTAssertFalse(BinaryTree<Int>().isLeaf)
+		XCTAssertFalse(empty.isLeaf)
 	}
 
 	func testEmptyTreesAreNotBranches() {
-		XCTAssertFalse(BinaryTree<Int>().isBranch)
+		XCTAssertFalse(empty.isBranch)
 	}
 
 
@@ -34,6 +34,8 @@ final class BinaryTreeTests: XCTestCase {
 
 
 // MARK: - Fixtures
+
+private let empty: BinaryTree<Int> = nil
 
 private let leaf = BinaryTree(0)
 
