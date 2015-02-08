@@ -27,16 +27,14 @@ final class BinaryTreeTests: XCTestCase {
 	}
 
 
-	func testLeftBranchesAreBranches() {
-		XCTAssert(BinaryTree(BinaryTree(0), 0, nil).isBranch)
-	}
-
-	func testRightBranchesAreBranches() {
-		XCTAssert(BinaryTree(nil, 0, BinaryTree(0)).isBranch)
-	}
+	let branches: [BinaryTree<Int>] = [
+		BinaryTree(BinaryTree(0), 0, nil),
+		BinaryTree(nil, 0, BinaryTree(0)),
+		BinaryTree(BinaryTree(0), 0, BinaryTree(0)),
+	]
 
 	func testBranchesAreBranches() {
-		XCTAssert(BinaryTree<Int>(BinaryTree(0), 0, BinaryTree(0)).isBranch)
+		map(branches) { XCTAssert($0.isBranch) }
 	}
 }
 
