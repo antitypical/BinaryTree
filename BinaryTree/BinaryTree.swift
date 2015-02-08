@@ -91,6 +91,7 @@ public func == <T: Equatable> (left: BinaryTree<T>, right: BinaryTree<T>) -> Boo
 	}
 }
 
+/// Inequality of binary trees of `Equatable` elements.
 public func != <T: Equatable> (left: BinaryTree<T>, right: BinaryTree<T>) -> Bool {
 	return !(left == right)
 }
