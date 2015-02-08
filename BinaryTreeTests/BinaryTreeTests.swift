@@ -15,15 +15,15 @@ final class BinaryTreeTests: XCTestCase {
 
 
 	func testLeavesAreLeaves() {
-		XCTAssert(BinaryTree(0).isLeaf)
+		XCTAssert(leaf.isLeaf)
 	}
 
 	func testLeavesAreNonEmpty() {
-		XCTAssertFalse(BinaryTree(0).isEmpty)
+		XCTAssertFalse(leaf.isEmpty)
 	}
 
 	func testLeavesAreNotBranches() {
-		XCTAssertFalse(BinaryTree(0).isBranch)
+		XCTAssertFalse(leaf.isBranch)
 	}
 
 
@@ -37,6 +37,11 @@ final class BinaryTreeTests: XCTestCase {
 		map(branches) { XCTAssert($0.isBranch) }
 	}
 }
+
+
+// MARK: - Fixtures
+
+private let leaf = BinaryTree(0)
 
 
 import BinaryTree
