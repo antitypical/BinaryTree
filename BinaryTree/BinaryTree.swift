@@ -91,6 +91,10 @@ public func == <T: Equatable> (left: BinaryTree<T>, right: BinaryTree<T>) -> Boo
 	}
 }
 
+public func != <T: Equatable> (left: BinaryTree<T>, right: BinaryTree<T>) -> Bool {
+	return !(left == right)
+}
+
 
 import Box
 import Prelude
